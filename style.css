@@ -1,0 +1,67 @@
+/* 部分内容加密插件样式 */
+
+/* e-encryption 容器样式 */
+.e-encryption {
+    margin: 20px 0;
+    padding: 30px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    border: 1px solid #ddd; /* 添加外边框 */
+    text-align: center; /* 为了使按钮居中 */
+}
+
+/* 输入框样式 */
+.e-encryption input.encry-i[type="text"],
+.e-encryption input.encry-i[type="password"] {
+    width: 100%;
+    line-height: 36px;
+    margin-top: 5px;
+    border: 1px solid #F2EFEF;
+    border-radius: 25px;
+    font-size: 16px;
+    padding: 5px 16px;
+    transition: all .5s ease 0;
+    outline: 0;
+    box-sizing: border-box;
+    display: block; /* 使输入框占满整行 */
+}
+
+.e-encryption input.encry-i[type="text"]:hover,
+.e-encryption input.encry-i[type="password"]:hover {
+    border: 1px solid #f4898c;
+    box-shadow: 0 0 4px #f4898c;
+}
+
+/* 提交按钮样式 */
+.e-encryption input.encry-s[type="submit"] {
+    width: auto;
+    background-color: var(--accent-color, #f4898c);
+    color: #fff;
+    font-size: 21px;
+    padding: 13px 20px;
+    border-radius: 25px;
+    border: 0;
+    height: auto;
+    outline: none;
+    line-height: 20px;
+    cursor: pointer;
+    transition: .4s;
+    display: block; /* 使按钮占满整行 */
+    margin: 20px auto 0; /* 顶部边距和自动水平边距 */
+}
+
+input.encry-s[type="submit"]:hover {
+    background-color: var(--accent-color-hover, #e4756f);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .e-encryption {
+        padding: 15px;
+    }
+    .e-encryption input.encry-i[type="password"],
+    .e-encryption input.encry-s[type="submit"] {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
